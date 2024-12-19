@@ -1,0 +1,75 @@
+/* Profile page layout */
+
+.postSkeleton {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* margin-bottom: 20px; */
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  padding: 15px;
+  animation: pulse 1.5s infinite ease-in-out;
+  width: 100%;
+}
+
+@media (max-width: 468px) {
+  .postSkeleton {
+    width: 100vw;
+  }
+}
+
+.skeletonHeader {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.skeletonAvatar {
+  width: 40px;
+  height: 40px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+
+.skeletonName {
+  width: 100px;
+  height: 15px;
+  background-color: #ccc;
+  border-radius: 5px;
+}
+
+.skeletonImage {
+  width: 100%;
+  max-width: 500px;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background-color: #ddd;
+  border-radius: 8px;
+}
+
+.skeletonCaption {
+  width: 80%;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 5px;
+}
+
+.skeletonLikes {
+  width: 50%;
+  height: 15px;
+  background-color: #ccc;
+  border-radius: 5px;
+}
+
+/* Animation for skeleton loading effect */
+@keyframes pulse {
+  0% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.7;
+  }
+}

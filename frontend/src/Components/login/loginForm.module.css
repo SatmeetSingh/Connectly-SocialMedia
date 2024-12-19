@@ -1,0 +1,39 @@
+.loginpage {
+  width: 40%;
+  height: 80%;
+  min-width: 500px;
+  background-color: #ffffff;
+  padding: 3%;
+  margin-top: 10px;
+  border-radius: 20px;
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputsection {
+  display: flex;
+  flex-direction: column;
+  /* position: relative; */
+}
+
+.input {
+  padding: 9px 12px;
+  background-color: rgba(244, 240, 240, 0.1);
+  outline: none;
+  font-size: large;
+  box-shadow: rgba(99, 99, 99, 0.3) 2px 4px 8px 0px;
+}
+
+@media (max-width: 600px) {
+  .loginpage {
+    width: 90%;
+    min-width: 300px;
+    border-radius: 10px;
+  }
+}
+
+.line::before {
+  border: 1px solid black;
+}

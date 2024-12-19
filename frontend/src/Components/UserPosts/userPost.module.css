@@ -1,0 +1,27 @@
+.postpage {
+  width: 100%;
+  overflow: hidden;
+  background-color: rgba(255, 228, 196, 0.3);
+  scrollbar-width: none;
+}
+.posts {
+  padding-top: 10px;
+  padding-bottom: 70px;
+}
+
+@media (max-width: 750px) {
+  .posts {
+    width: 100%;
+    place-items: center;
+    background-color: white;
+  }
+}
+
+@media (min-width: 750px) {
+  .posts {
+    height: 100%;
+    place-items: center;
+    background-color: white;
+    flex: 2;
+  }
+}

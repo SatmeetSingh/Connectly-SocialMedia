@@ -1,0 +1,23 @@
+.settings {
+  padding-inline: 10px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+}
+
+.arrow {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  align-self: flex-start;
+}
+
+.transition {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}

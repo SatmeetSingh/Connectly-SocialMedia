@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ES2020", // Target ECMAScript version
+    "module": "ESNext", // Specify module code generation
+    "jsx": "react-jsx", // Use the new JSX transform for React 17+
+    "strict": true, // Enable all strict type-checking options
+    "skipLibCheck": true, // Skip type checking of declaration files
+    "moduleResolution": "Node", // Module resolution strategy
+    "esModuleInterop": true, // Enable emit interoperability between CommonJS and ES Modules
+    "forceConsistentCasingInFileNames": true, // Ensure consistent casing in module imports
+    "baseUrl": "./src", // Base directory to resolve non-relative module names
+    "paths": {
+      // Aliases for module resolution
+      "@/*": ["*"]
+    },
+    "allowImportingTsExtensions": true,
+    "noEmit": true
+  },
+  "include": ["src/**/*"], // Include all TypeScript files in src directory
+  "exclude": ["node_modules", "build"] // Exclude node_modules and build directories
+}

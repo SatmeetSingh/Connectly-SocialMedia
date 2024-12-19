@@ -1,0 +1,230 @@
+.profilenav {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 10px;
+  margin-top: 10px;
+}
+
+.profilenavleft {
+  display: flex;
+  gap: 30px;
+}
+
+/* General Styling */
+.profilePage {
+  max-width: 550px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Profile Header Section */
+.profileHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  /* gap: 10px; */
+}
+
+.profilePicture {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.addPhoto {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(41, 41, 202);
+  border-radius: 50%;
+  border: 2px solid white;
+  position: absolute;
+  right: 17%;
+  bottom: 10%;
+}
+
+.profileInfo {
+  flex: 1;
+  min-width: 200px;
+  /* display: flex; */
+}
+
+.username {
+  align-self: center;
+  font-size: 16px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.stats {
+  display: flex;
+  gap: 25px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  /* flex-wrap: wrap; */
+}
+
+.stats span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bio {
+  font-size: 14px;
+  padding-left: 5px;
+  color: #666;
+  align-self: self-start;
+}
+
+.fix {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 90%;
+  gap: 50px;
+}
+
+/* Posts Grid Section */
+.postsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+}
+
+.postItem {
+  aspect-ratio: 1 / 1; /* Ensure square posts */
+  overflow: hidden;
+}
+
+.postImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.customicons {
+  display: flex;
+  justify-content: center;
+}
+.customicons .cusIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For smaller screens (phones) */
+@media (max-width: 768px) {
+  .profilePage {
+    padding: 10px;
+  }
+  .addPhoto {
+    position: absolute;
+    right: 5%;
+    bottom: 10%;
+  }
+
+  .profilePicture {
+    width: 72px;
+    height: 72px;
+    margin-right: 10px;
+  }
+
+  .fix {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+    width: 90%;
+    gap: 80px;
+  }
+
+  .username {
+    font-size: 15px;
+  }
+
+  .stats {
+    font-size: 14px;
+    gap: 25px;
+  }
+
+  .bio {
+    font-size: 12px;
+  }
+
+  .postsGrid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1;
+  }
+}
+
+/* For extra-small screens (narrow phones) */
+@media (max-width: 480px) {
+  .profileHeader {
+    gap: 5px;
+  }
+
+  .fix {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+    gap: 5px;
+    padding-left: 5px;
+  }
+
+  .profilePicture {
+    margin: 0 auto 7px;
+  }
+
+  .profileInfo {
+    text-align: center;
+    width: 100%;
+  }
+
+  .stats {
+    justify-content: center;
+  }
+
+  .postsGrid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1;
+  }
+}
+
+.profilebtn {
+  background-color: rgba(220, 255, 200, 0.7);
+  padding-inline: 25px;
+  padding-block: 10px;
+  border-radius: 5px;
+  margin-block: 10px;
+  transition: inherit 500ms ease-in-out;
+}
+
+.profilebtn:hover,
+.profilebtn1:hover {
+  transform: scale(1.05);
+}
+
+.profilebtn1 {
+  background-color: rgba(220, 255, 200, 0.7);
+  padding-inline: 10px;
+  padding-block: 10px;
+  border-radius: 5px;
+  margin-block: 10px;
+  transition: inherit 500ms ease-in-out;
+}

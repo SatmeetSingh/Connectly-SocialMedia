@@ -1,0 +1,10 @@
+.search {
+  display: flex;
+  gap: 20px;
+}
+.profilePicture {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 50%;
+}

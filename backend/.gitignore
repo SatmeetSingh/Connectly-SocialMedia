@@ -1,0 +1,105 @@
+# Ignore build output
+bin/
+obj/
+Upload/
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Auto-generated files
+*.vspscc
+*.vssscc
+.vscode/
+.vs/
+*.ncrunchsolution
+*.ncrunchproject
+# ASP.NET Scaffolding
+.scaffolding
+
+# ASP.NET Core configuration files
+appsettings.Development.json
+appsettings.Production.json
+
+# Log files
+*.log
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# .NET Core package dependencies
+packages/
+*.nupkg
+*.snupkg
+
+# Rider and JetBrains IDE files
+.idea/
+*.sln.iml
+
+# NuGet packages
+# Uncomment if you have a packages directory in the root not managed by NuGet.
+# /packages
+*.nupkg
+# NuGet v3's project.json files produces more ignorable files
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Windows image file caches
+*.pdb
+
+# Local History for Visual Studio
+.history/
+
+# Logs
+*.log
+
+# Ignore all files ending with .jfm
+*.jfm
+
+# Visual Studio Code
+.vscode/
+.vscode/settings.json
+
+# Certificate files
+*.pfx
+*.p12
+
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# Publish output
+publish/
+out/
+
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Resharper files
+_ReSharper*/
+*.ReSharper
+*.DotSettings.user
+
+# Ignore StyleCop report
+StyleCopReport.xml
+
+# LiteDB
+*.db
+
+# IDE settings for Rider
+.idea/
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates

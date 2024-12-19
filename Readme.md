@@ -18,13 +18,10 @@ The app includes functionalities like user authentication, photo uploads, likes,
 - **Feed**: Displays posts from followed users in chronological order.
 - **Responsive Design**: Optimized for mobile devices currently.
 
+## Support This Project
 
-<!-- - **Social Features**:(yet to work on)
-  - Like posts.
-  - Comment on posts.
-  - Follow/unfollow users. -->
-<!-- - **Authentication**: [e.g., JWT or OAuth integration, if applicable]. -->
-<!-- - **Deployment**: Ready for deployment on [e.g., Azure, AWS, Vercel, etc.]. -->
+If you find this project helpful, you can support it by making a donation:
+[![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/ncp/payment/HKG73CGX6E5LC)
 
 ## 📂 Project Structure
 

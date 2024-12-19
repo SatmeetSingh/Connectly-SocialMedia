@@ -1,4 +1,3 @@
-```markdown
 # Full-Stack Application: React.js + ASP.NET Core Web API + SQL Server
 
 ## 📋 Overview
@@ -18,7 +17,7 @@ The app includes functionalities like user authentication, photo uploads, likes,
 - **Image Handling**: Upload and display user photos with support for captions.
 - **Feed**: Displays posts from followed users in chronological order.
 - **Responsive Design**: Optimized for mobile devices currently.
-```
+
 
 <!-- - **Social Features**:(yet to work on)
   - Like posts.

@@ -87,7 +87,7 @@ namespace dating_app_backend.src.Service
 
         public async Task<UserModel> UpdateUser([FromForm] UpdateUserDto updateDto ,Guid id) {
             var user = await GetUserById(id);
-            if (user == null)
+            if (user == null)   
             {
                 throw new KeyNotFoundException("user does not match");
             }
@@ -123,6 +123,14 @@ namespace dating_app_backend.src.Service
 
             await _context.SaveChangesAsync();
             return user;
+        }
+
+        public async Task DeleteUser(Guid id)
+        {
+            var user = await GetUserById(id);
+
+            _context.Remove(user);
+            await _context.SaveChangesAsync();
         }
 
         public async Task<UserModel> GetUserByEmail(string email) {

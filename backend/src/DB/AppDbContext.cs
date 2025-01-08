@@ -10,7 +10,7 @@ namespace dating_app_backend.src.DB
         public DbSet<UserModel> Users { get; set; }
         public DbSet<PostModel> Posts { get; set; }
         //public DbSet<CommentModel> Comments { get; set; }
-        //public DbSet<LikesModel> Likes { get; set; }
+        public DbSet<LikesModel> Likes { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -24,13 +24,13 @@ namespace dating_app_backend.src.DB
                 .HasOne(f => f.Follower)
                 .WithMany(u => u.Following)
                 .HasForeignKey(f => f.FollowerId)
-                .OnDelete(DeleteBehavior.Cascade);
+                .OnDelete(DeleteBehavior.Restrict);
 
             modelBuilder.Entity<FollowModel>()
                 .HasOne(f => f.Following)
                 .WithMany(u => u.Followers)
                 .HasForeignKey(f => f.FolloweeId)
-                .OnDelete(DeleteBehavior.Cascade);
+                .OnDelete(DeleteBehavior.Restrict);
 
             // One-to-Many Relationships
             modelBuilder.Entity<UserModel>(entity =>

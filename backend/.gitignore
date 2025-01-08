@@ -2,6 +2,7 @@
 bin/
 obj/
 Upload/
+Migrations/
 
 # User-specific files
 *.rsuser

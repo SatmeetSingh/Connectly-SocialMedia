@@ -31,9 +31,9 @@ namespace dating_app_backend.src.Models.Entity
         public string Content { get; set; } = String.Empty;
         [Required] 
         public string ImageUrl { get; set; } = String.Empty;
-        public int LikesCount { get; set; } = 0;
-        public int CommentCount { get; set; } = 0;
-        public int ShareCount { get; set; } = 0;
+        public int? LikesCount { get; set; } = 0;
+        public int? CommentCount { get; set; } = 0;
+        public int? ShareCount { get; set; } = 0;
         public string Location { get; set; } = String.Empty;
         
         public Guid UserId { get; set; }
